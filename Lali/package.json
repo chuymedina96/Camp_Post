@@ -1,0 +1,11 @@
+{
+  "name": "lali",
+  "version": "1.0.0",
+  "description": "just a demo for lali",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chuy and Lali",
+  "license": "MIT"
+}
