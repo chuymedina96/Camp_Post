@@ -1,1 +1,6 @@
-<h1>You fell in love with: <%= thingVar + me + me + me.toUpperCase(); %></h1>
+<h1>You fell in love with: <%= thingVar + me + me + me.toUpperCase() + Random.toLowerCase() %></h1>
+<% if (thingVar === "rusty") { %>
+    <p>You picked rusty!!</p>
+<% } else {  %>
+    <p>Not rusty!</p>
+<% } %>
