@@ -1,0 +1,16 @@
+<% include partials/header %>
+<div class="animated bounceIn ui text main container segment text-center">
+        <div class="ui huge header"><%= blog.title %></div>
+        <div class="item">
+            <img class="ui centered rounded image" src="<%= blog.image %>">
+            <h2><%- blog.body.substring(0, 100) %></h2>
+        </div>
+        <div style="display:block;">
+            <button class="ui blue basic button"><a href="/blogs/<%= blog._id %>/edit">Edit post here</a></button>
+            <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+                <button class="ui red basic button">Delete</button>
+            </form> 
+        </div>
+        <h2><%= blog.created.toDateString() %></h2>
+    <% include partials/footer %>
+</div>

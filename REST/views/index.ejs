@@ -1,0 +1,13 @@
+<% include partials/header %>
+<div class="ui text main container text-center">
+        <% blogs.forEach(function(blog){ %>
+        <div class="animated fadeInUp">
+            <h2><%= blog.title %></h2>
+            <img class="img-responsive" src="<%= blog.image %>"></h2><br>
+            <p>
+                <a class="btn btn-primary" href="/blogs/<%= blog._id %>">Read more!</a>  
+            </p>
+        <% }); %>   
+        </div>
+        <% include partials/footer %>
+</div>
